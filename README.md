@@ -32,7 +32,6 @@ Just include the header and go:
 
 ```cpp
 #include <StrUI.hpp>   // path relative to your project
-
 #include <iostream>
 
 int main() {
@@ -47,7 +46,7 @@ g++ -std=c++17 -I/path/to/libstrui/include example.cpp -lunistring
 ```
 
 > **Note:** `libunistring` is only required at *link* time when you compile the optional `.cpp` tests.  
-> The header does `#ifdef` guards so you can keep your project header‑only if you already link `libunistring` elsewhere.
+> The header does `#ifdef` guards so you can keep your project header‑only if you already link `libunistring`.
 
 ---
 
