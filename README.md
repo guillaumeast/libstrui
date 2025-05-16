@@ -7,8 +7,9 @@ Minimal Unicode‑aware & ANSI‑aware string library (header‑only, class‑le
 [![Platform: Unix](https://img.shields.io/badge/platform-Unix-darkgreen)](https://en.wikipedia.org/wiki/Unix)
 [![Status: v1.0.0](https://img.shields.io/badge/status-v1.0.0-brightgreen)](https://github.com/guillaumeast/libstrui/releases/tag/v1.0.0)
 
-> **`libstrui`** is a *tiny*, Unicode‑ & ANSI‑aware **C++17 header‑only library** for terminal strings.  
-> Think of it as the guts of `cut`, `sed`, or `wc`, but *escape‑safe*, **UTF‑8‑capable** (incl. wide & combined emojis) and ready to drop in **one header**.
+> **`libstrui`** is a *tiny* **C++17 header‑only library** for measuring terminal strings.  
+> Think of it as the guts of `cut`, `sed`, or `wc`, but *escape‑safe*, **UTF‑8‑capable** (incl. wide & combined emojis).  
+> Ready to drop in **one header**.
 
 ---
 
@@ -45,10 +46,8 @@ Add the *include* directory to your compiler flags, e.g.:
 g++ -std=c++17 -I/path/to/libstrui/include example.cpp -lunistring
 ```
 
-> **Note:** `libunistring` is only required at *link* time when you compile  
-> the optional `.cpp` tests. For end‑user code the header does `#ifdef` guards  
-> so you can keep your project header‑only if you already link `libunistring`  
-> elsewhere.
+> **Note:** `libunistring` is only required at *link* time when you compile the optional `.cpp` tests.  
+> The header does `#ifdef` guards so you can keep your project header‑only if you already link `libunistring` elsewhere.
 
 ---
 
@@ -72,9 +71,9 @@ g++ -std=c++17 -I/path/to/libstrui/include example.cpp -lunistring
 
 ---
 
-## 🚀 Build & Test
+## 🧪 Test
 
-No build is needed to *use* the library ✌️
+No build is needed to *use* the library ✌️.
 
 But you can build and run the library *test program*:
 
