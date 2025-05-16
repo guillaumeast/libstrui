@@ -8,7 +8,7 @@ Minimal Unicode‑aware & ANSI‑aware string library (header‑only, class‑le
 [![Status: v1.0.0](https://img.shields.io/badge/status-v1.0.0-brightgreen)](https://github.com/guillaumeast/libstrui/releases/tag/v1.0.0)
 
 > **`libstrui`** is a *tiny* **C++17 header‑only library** for measuring terminal strings.  
-> Think of it as the guts of `cut`, `sed`, or `wc`, but *escape‑safe*, **UTF‑8‑capable** (incl. wide & combined emojis).  
+> Think of it as `cut`, `sed`, or `wc`, but *escape‑safe*, **UTF‑8‑capable** (incl. wide & combined emojis).  
 > Ready to drop in **one header**.
 
 ---
