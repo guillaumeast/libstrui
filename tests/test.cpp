@@ -1,11 +1,6 @@
 #include <iostream>
 #include "strui.hpp"
 
-// --------- TEST COMMAND ---------
-// clang++ -std=c++17 test.cpp -L/opt/homebrew/lib $(pkg-config --cflags --libs stringui) -o test
-// ./test
-// --------------------------------
-
 static size_t passed = 0;
 static size_t failed = 0;
 static std::string red = "\033[31m";
