@@ -21,9 +21,9 @@ namespace strui {
     size_t width(const string &input);
     size_t height(const string& input);
     size_t count(const string& value, const string& str);
-    string join(const vector<string> &strings, const string &separator);
+    string join(const vector<string> &strings, const string &separator = "");
+    string repeat(const size_t count, const string &str, const string &separator = "");
     vector<string> split(const string &str, const string &separator);
-    string repeat(const size_t count, const string &str, const string &separator);
 
     // Remove ANSI escape sequences
     inline string clean(const string& input)
@@ -104,6 +104,18 @@ namespace strui {
         return result;
     }
 
+    inline string repeat(const size_t count, const string &str, const string &separator)
+    {
+        if (count == 0) return "";
+
+        string result = str;
+        for (size_t i = 1; i < count; ++i) {
+            result += separator + str;
+        }
+
+        return result;
+    }
+
     inline vector<string> split(const string &str, const string &separator)
     {
         vector<string> result;
@@ -119,18 +131,6 @@ namespace strui {
         }
 
         result.push_back(str.substr(start));
-        return result;
-    }
-
-    inline string repeat(const size_t count, const string &str, const string &separator)
-    {
-        if (count == 0) return "";
-
-        string result = str;
-        for (size_t i = 1; i < count; ++i) {
-            result += separator + str;
-        }
-
         return result;
     }
 }
