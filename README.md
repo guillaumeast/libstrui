@@ -58,7 +58,8 @@ g++ -std=c++17 -I/path/to/libstrui/include example.cpp -lunistring
 | `strui::height(str)`                          | Return number of *lines* in `str`             |
 | `strui::clean(str)`                           | Remove ANSI *escape sequences*                |
 | `strui::split(str, sep)`                      | Vector‑split `str` on `sep`                   |
-| `strui::repeat(count, str, sep = "")`         | Repeat `str` `count` times                    |
+| `strui::join(str, sep = "")`                  | Return merged `std::string` (optional `sep`)  |
+| `strui::repeat(count, str, sep = "")`         | Repeat `str` `count` times (optional `sep`)   |
 | `strui::count(str, value)`                    | Count occurrences of `value` in `str`         |
 
 > `Display width` is measured in `columns`, of `characters` or `strings`, when output to a device that uses `non-proportional fonts`.  
